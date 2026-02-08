@@ -1,4 +1,4 @@
-# 🌟 Grow Halo
+# Grow Halo
 
 A e-commerce analytics platform. Ingests raw event data from **Shopify**, **Meta Ads**, and **Google Ads** — normalizes it into clean models, aggregates daily summaries, and serves business metrics through a REST API. Includes a real-time dashboard UI.
 
