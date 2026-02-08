@@ -8,7 +8,6 @@ DTC brands pull data from multiple platforms but lack a unified view of core met
 
 ## Features
 
-- **Multi-tenant** — tenant-scoped via `AsyncLocalStorage`; every query is isolated by `tenant_id`
 - **Three sources** — Shopify (orders/customers), Meta Ads (ad spend), Google Ads (ad spend)
 - **Dual ingestion** — push via webhooks / batch API, pull via polling with cursor-based sync
 - **Deduplication** — `ON CONFLICT (tenant_id, source, external_id)` in `raw_events`
