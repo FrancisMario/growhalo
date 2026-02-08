@@ -1,0 +1,38 @@
+{
+  "name": "grow-halo",
+  "version": "1.0.0",
+  "description": "Multi-tenant e-commerce analytics platform",
+  "main": "dist/app.js",
+  "scripts": {
+    "dev": "tsx watch src/app.ts",
+    "build": "tsc",
+    "start": "node dist/app.js",
+    "migrate": "knex migrate:latest --knexfile src/db/knexfile.ts",
+    "migrate:make": "knex migrate:make --knexfile src/db/knexfile.ts",
+    "seed": "tsx scripts/seed.ts",
+    "reset": "tsx scripts/reset.ts",
+    "simulate:webhook": "tsx scripts/simulate-webhook.ts",
+    "simulator": "tsx scripts/simulator.ts",
+    "dashboard": "tsx dashboard/server.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@faker-js/faker": "^10.3.0",
+    "dotenv": "^17.2.4",
+    "express": "^5.2.1",
+    "knex": "^3.1.0",
+    "pg": "^8.18.0",
+    "uuid": "^13.0.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.2.2",
+    "@types/uuid": "^10.0.0",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}
